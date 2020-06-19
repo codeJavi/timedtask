@@ -1,4 +1,4 @@
-class Timedtask::CLI
+class timedtask::CLI.new 
 
 def call
   puts "Today's Tasks"

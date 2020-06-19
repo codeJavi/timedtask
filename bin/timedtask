@@ -4,4 +4,4 @@
 require './lib/timedtask/version'
 
 
-#Cli.new.call 
+#CLI.new.call 
