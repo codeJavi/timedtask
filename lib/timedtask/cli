@@ -1,7 +1,25 @@
 class timedtask::CLI.new 
 
 def call
-  puts "Today's Tasks"
+  User.new 
+  welcome 
+  main_menu 
 end 
+
+def welcome 
+  puts "Welcome to your daily planner!"
+  puts "How can we help you plan your day?"
+end 
+
+  def main_menu 
+  @menu_options = 
+  menu = << -MENU
+  Please enter the following information
+  1. Number of tasks needed to be completed
+  2. Level of priority (1-10)
+  3. Exit 
+Menu 
+
+
 
 end 
