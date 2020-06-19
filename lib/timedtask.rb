@@ -1,6 +1,2 @@
-require "timedtask/version"
-
-module Timedtask
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require_relative "./lib/timedtask/version"
+require_relative './lib/timedtask/cli' 

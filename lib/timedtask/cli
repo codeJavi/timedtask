@@ -1,0 +1,7 @@
+class Timedtask::CLI
+
+def call
+  puts "Today's Tasks"
+end 
+
+end 
