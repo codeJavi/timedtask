@@ -1,7 +1,9 @@
 #!/usr/bin/env ruby
 
-
+require "bundler/setup"
 require './lib/timedtask/version'
+
+
 
 
 #CLI.new.call 
