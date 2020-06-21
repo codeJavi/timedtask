@@ -1,7 +1,6 @@
 Welcome!
 # Timedtask
-Welcome to your daily planner where we customize a plan for you to complete your daily tasks!  
-
+Welcome to your daily planner where we customize a plan for you to complete your daily tasks! This app was built to assist users who struggle with time management and organization. In order for Timedtask to obtain the daily tasks, the user would need to have an icloud email or itunes user id ¬– that way it would have access to the tasks listed in their calendar app. 
 ## Installation
 
 You need to have ruby installed in your computer prior to creatinga gem. Once installed, you must fork and clone it and run your code under the bin/timedtask file. 

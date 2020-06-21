@@ -3,7 +3,13 @@
 
 require "bundler/setup"
 
+#how do we load file in Lib/cli
+#require relative
+#require
+#it seems to look at directories that are in your load path 
+#load 
+# $LOAD_PATH - global variable 
 
-#cli.new.call 
+cli = cli.new.call 
 
 
