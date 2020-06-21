@@ -1,0 +1,5 @@
+class api 
+  attr_reader :meals_json 
+  url = 
+  response = 
+  JSON.parse (response) 
