@@ -14,15 +14,14 @@ end
 
 def main_menu 
   puts "Hi there! How can we help organize your tasks found in your Calendar today?"
-  @menu_options = [1, 2, 3, 4, 5]
+  @menu_options = [1, 2, 3, 4, 5 ]
   menu = << -MENU
   Please select one of the following: 
-  1. Organize by importance (least to most)
-  2. Organize by importance (most to least)
-  3. Organize by time duration (least to most) 
-  4. Organize by time duration (most to least)
-  5. Create daily planner 
-  5. Exit 
+  1. Please list tasks from most to least importance 
+  2. Please list tasks that are the most to least time consuming 
+  3. Manually create daily planner 
+  4. Generate daily planner 
+  5. Return Home 
 MENU 
 
 puts "#{menu}"
@@ -31,16 +30,17 @@ puts "#{menu}"
   validate_input(input, @menu_options)
     case input
     when 1
-      least_to_most important 
+     most_to_least_important 
     when 2
-      most_to_least important 
+      most_to_least_time_consum
     when 3
-      low_time_duration
+      manual_create_daily_planner  
     when 4
-      high_time_duration
+     create_daily_planner 
     when 5
-      go_back_home 
-    end
+      return_home 
+  end
+    
   
     def get_input
     print "Choose a number or 'home':"
@@ -49,9 +49,9 @@ puts "#{menu}"
     input.to_i
   end 
   
-  def daily_planner 
+  def create_daily_plan 
     Api.new
-    meal_plan_menu
+    
   end
 
 
