@@ -8,10 +8,14 @@ end
 
 def User login 
   puts "Welcome to your daily planner! Please enter your apple id or icloud email and password to login:"
-    login_info = { 
-    :user_email => {
-    :password =>{
-    },
+    login_info = {}
+    :user_email => {}
+    :password => {}
+  
+  user.each do |user, data|
+    puts "#{user}: #{data}"
+  end 
+  
 end 
 
 def main_menu 
