@@ -1,22 +1,26 @@
 class timedtask::CLI.new 
 
 def call
-  User.new 
-  welcome 
+  User login  
+  Welcome 
   main_menu 
 end 
 
-def welcome 
-  puts "Welcome to your daily planner!"
-  puts "How can we help you plan your day?"
+def User login 
+  puts "Welcome to your daily planner! Please enter your apple id or icloud email and password to login:"
+    @userlogin info 
+    @userpassword
 end 
 
-  def main_menu 
+def main_menu 
+  puts "Hi there! How can we help organize your tasks found in your Calendar today?"
   @menu_options = [1, 2, 3, 4,]
   menu = << -MENU
-  Please enter the following information
-  1. Name   
-  2. login information to icloud/apple id account.
+  Please select one of the following: 
+  1. Organize by importance (least to most)
+  2. Organize by importance (most to least)
+  3. Organize by time duration (least to most) 
+  4. Organize by time duration (most to least)
   3. Exit 
 Menu 
 
