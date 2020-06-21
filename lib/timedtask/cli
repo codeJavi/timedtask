@@ -15,9 +15,8 @@ end
   @menu_options = [1, 2, 3, 4,]
   menu = << -MENU
   Please enter the following information
-  1. Number of tasks 
-  2. Level of priority (1-10)
-  3. Time it takes to complete tasks 
+  1. Name   
+  2. login information to icloud/apple id account.
   3. Exit 
 Menu 
 
