@@ -8,8 +8,10 @@ end
 
 def User login 
   puts "Welcome to your daily planner! Please enter your apple id or icloud email and password to login:"
-    @userlogin info 
-    @userpassword
+    login_info = { 
+    :user_email => {
+    :password =>{
+    },
 end 
 
 def main_menu 

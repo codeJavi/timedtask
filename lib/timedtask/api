@@ -1,5 +1,14 @@
 class api 
-  attr_reader :meals_json 
-  url = 
-  response = 
-  JSON.parse (response) 
+  attr_reader :tasks_json 
+ # url = 'HTTPS://www.icloud.com/calendar/'
+ # response = RestClient.get(url)
+ # JSON.parse (response) 
+ 
+   def initialize 
+    create_url
+    response = RestClient.get(@url)
+    @tasks_json = JSON.parse(response)
+    send_to_timedtask(@tasks_json)
+  end
+  
+  
