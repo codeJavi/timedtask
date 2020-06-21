@@ -1,11 +1,12 @@
 Welcome!
 # Timedtask
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/timedtask`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Welcome to your daily planner where we customize a plan for you to complete your daily tasks!  
 
 ## Installation
+
+You need to have ruby installed in your computer prior to creatinga gem. Once installed, you must fork and clone it and run your code under the bin/timedtask file. 
+
+
 
 Add this line to your application's Gemfile:
 
@@ -23,7 +24,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Login with your icloud email or apple id.
+Have your tasks listed in the icloud calendar so that timedtask is able to obtain them. 
+Follow the prompts and have a daily plan generated.
 
 ## Development
 
