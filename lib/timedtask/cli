@@ -2,8 +2,8 @@ class timedtask::CLI.new
 
 def call
   User login  
-  Welcome 
   main_menu 
+  create_daily_plan
 end 
 
 def User login 

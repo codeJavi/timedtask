@@ -1,5 +1,5 @@
 class api 
-  attr_reader :tasks_json 
+  attr_reader :daily_plan_json  
  # url = 'HTTPS://www.icloud.com/calendar/'
  # response = RestClient.get(url)
  # JSON.parse (response) 
@@ -7,9 +7,13 @@ class api
    def initialize 
     create_url
     response = RestClient.get(@url)
-    @tasks_json = JSON.parse(response)
-    send_to_timedtask(@tasks_json)
+    @daily_plan_json = JSON.parse(response)
+    send_to_timedtask(@daily_plan_json)
   end
   
+   def send_to_timedtask(daily_plan_json)
+    create_daily_plan(daily_plan_json)
+    end 
+    
   
   
