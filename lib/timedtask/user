@@ -1,5 +1,5 @@
 class user 
-  attr_accessor :daily_plan :task_completion
+  attr_accessor :daily_plan, :task_completion
   attr_reader :user.choice 
 
   @@all = []
