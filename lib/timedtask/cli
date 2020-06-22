@@ -47,17 +47,14 @@ puts "#{menu}"
       return_home 
   end
     
-  
-    def get_input
-    print "Choose a number or 'home':"
+  def create_daily_plan (input, User.choice)
+   puts "Enter selection from Menu or 'home':"
+   User.choice from menu_options.each with  index (#) |daily_plan, index|
+    puts "      #{index}: #{daily_plan}"
     input = gets.chomp 
+    validate_input(input, User.choice)
     main_menu if input == 'home'
-    input.to_i
-  end 
-  
-  def create_daily_plan 
-    Api.new
-    
+    input.to_
   end
 
 
