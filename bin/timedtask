@@ -1,10 +1,10 @@
 #!/usr/bin/env ruby
 
 
-require "bundler/setup"
+require_relative "../lib/timedtask.rb"
 
 
 
-#cli = cli.new.call 
-
+cli = CLI.new 
+cli.call 
 
